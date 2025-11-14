@@ -45,7 +45,7 @@ body {
     font-family: 'Arial', sans-serif; /* Uma fonte comum e legível para o restante do site */
     margin: 20px;
     padding: 0;
-    background-color: #e6f7ff; /* Um azul ciano bem claro e vibrante como fundo */
+    background-color: #ebdee9; /* Um azul ciano bem claro e vibrante como fundo */
 }
 
 h1 {
@@ -80,22 +80,21 @@ div > label {
 .cell {
     width: 35px; /* Aumentando um pouco o tamanho das células */
     height: 35px;
-    border: 1.5px solid #4B0082; /* Azul violeta vibrante para as bordas das células */
+    border: 2px solid #8A2BE2; /* Azul violeta vibrante para as bordas das células */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
     font-weight: bold;
     border-radius: 8px; /* Bordas mais arredondadas */
-    background-color: #f9f9ff; /* fundo suave para contraste */
-    color: #222; /* cinza escuro para máxima legibilidade */
+    color: #1a7025; /* Azul aço para a cor das letras (ainda vibrante, mas legível) */
     cursor: pointer;
     user-select: none;
     transition: background-color 0.3s ease; /* Transição suave para o hover */
 }
 
 .cell:hover {
-    background-color: #cce5ff; /* Azul claro ao passar o mouse (ainda visível, mas não ofuscante) */
+    background-color: #9acfaa; /* Azul claro ao passar o mouse (ainda visível, mas não ofuscante) */
 }
 
 .selecionada {
