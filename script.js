@@ -94,7 +94,7 @@ function gerarCacaPalavras() {
   }
 
   palavrasNivel = palavrasSelecionadas;
-  gerarGrid(linhas, colunas, palavrasNivel, orientacao);
+  gerarGrid(linhas, colunas, palavrasNivel, "horizontal-vertical");
   exibirGrid(container, colunas);
   exibirListaPalavras(listaPalavrasElement);
 }
