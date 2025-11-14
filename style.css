@@ -1,0 +1,260 @@
+/* Estilos para a mensagem de Parabéns - Versão Infantil */
+#parabensMensagem {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Fixado na tela */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o elemento */
+    
+    /* Cores alegres - Mais vibrantes */
+    background-color: #FFD700; /* Ouro vibrante */
+    color: #FF4500; /* Laranja avermelhado vibrante */
+    
+    padding: 40px; /* Mais espaço interno */
+    border-radius: 20px; /* Bordas mais arredondadas */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    font-size: 2.8em; /* Tamanho da fonte um pouco maior */
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3); /* Sombra mais suave */
+    font-weight: bold;
+    letter-spacing: 1px; /* Espaçamento leve entre letras */
+    text-transform: none; /* Mantém a capitalização original do texto */
+    line-height: 1.3; /* Melhor espaçamento entre linhas */
+    
+    /* Fontes padrão do sistema que são geralmente legíveis e agradáveis */
+    font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', 'Chalkboard SE', sans-serif;
+
+    /* Adicionando uma animação de pulso */
+    animation: pulse 1.5s infinite alternate; 
+}
+
+/* Definição da animação de pulso */
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.05); /* Aumenta ligeiramente o tamanho */
+    }
+}
+
+/* Se você tem outros estilos para o corpo do documento ou para elementos comuns,
+   mantenha-os aqui. Por exemplo, aqui está o que você já deve ter:
+*/
+body {
+    font-family: 'Arial', sans-serif; /* Uma fonte comum e legível para o restante do site */
+    margin: 20px;
+    padding: 0;
+    background-color: #ebdee9; /* Um azul ciano bem claro e vibrante como fundo */
+}
+
+h1 {
+  color: #af13ce; /* Azul celeste vibrante para o título */
+  text-align: center;
+}
+
+/* ... e o restante do seu CSS (para .cell, .grid-container, etc.) */
+
+/* Estilos existentes para as células e o grid */
+div > label {
+    font-size: 1.2em;
+    color: #4B0082; /* Índigo vibrante */
+    margin-right: 10px;
+}
+
+#nivel {
+    padding: 8px;
+    font-size: 1em;
+    border: 2px solid #FF69B4; /* Rosa choque vibrante */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grid-container {
+    display: inline-grid;
+    gap: 5px; /* Aumentando um pouco o espaço entre as células */
+    border-spacing: 0;
+    margin: 20px auto; /* Centralizando o grid */
+}
+
+.cell {
+    width: 35px; /* Aumentando um pouco o tamanho das células */
+    height: 35px;
+    border: 2px solid #8A2BE2; /* Azul violeta vibrante para as bordas das células */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 8px; /* Bordas mais arredondadas */
+    color: #1a7025; /* Azul aço para a cor das letras (ainda vibrante, mas legível) */
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease; /* Transição suave para o hover */
+}
+
+.cell:hover {
+    background-color: #9acfaa; /* Azul claro ao passar o mouse (ainda visível, mas não ofuscante) */
+}
+
+.selecionada {
+    background-color: #FF4500; /* Laranja avermelhado vibrante para as letras selecionadas */
+    color: #fff; /* Branco para a cor da letra selecionada */
+}
+
+.found {
+    background-color: #32CD32; /* Verde limão vibrante para as palavras encontradas */
+    color: #fff;
+}
+
+#palavrasEncontrar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#palavrasEncontrar h2 {
+    color: #00BFFF; /* Azul celeste vibrante */
+}
+
+#listaPalavras {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#listaPalavras li {
+    background-color: #F0FFF0; /* Verde bem claro para o fundo da palavra (mantido suave) */
+    border: 1px solid #9ACD32; /* Amarelo esverdeado vibrante */
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin: 5px;
+    display: flex; /* Para alinhar imagem e texto */
+    align-items: center; /* Centraliza verticalmente */
+    font-size: 1.1em;
+    color: #008B8B; /* Azul-petróleo escuro vibrante */
+    font-weight: bold;
+    position: relative; /* Para posicionar o texto da palavra */
+    cursor: pointer;
+}
+
+#listaPalavras li img {
+    width: 50px; /* Tamanho da imagem */
+    height: 50px;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+#listaPalavras li .word-text {
+    color: transparent; /* Oculta o texto da palavra por padrão */
+    transition: color 0.3s ease-in-out;
+}
+
+#listaPalavras li.revealed .word-text {
+    color: #008B8B; /* Mostra o texto quando a classe 'revealed' é adicionada */
+}
+
+#listaPalavras li.found {
+    background-color: #32CD32; /* Verde limão vibrante para encontradas */
+    text-decoration: line-through; /* Linha no texto */
+}
+
+#listaPalavras li.found .word-text {
+    color: #006400; /* Verde escuro vibrante para o texto de palavras encontradas */
+}
+
+
+/* Estilos para os fogos de artifício */
+#fireworksContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite interagir com o que está por baixo */
+    z-index: 999; /* Abaixo da mensagem de parabéns, mas acima do jogo */
+}
+
+.firework-particle {
+    position: absolute;
+    background-color: var(--particle-color, white); /* Cor da partícula definida via JS */
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    opacity: 0;
+    animation: firework-explosion 1s forwards;
+    transform: translate(-50%, -50%); /* Centraliza a partícula no seu ponto de origem */
+}
+
+@keyframes firework-explosion {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0) translate(var(--dx), var(--dy)); /* Dispersão */
+    }
+}
+
+/* Definindo as variáveis para a dispersão das partículas nos fogos */
+.firework-particle:nth-child(1) { --dx: -20px; --dy: -20px; }
+.firework-particle:nth-child(2) { --dx: 20px; --dy: -20px; }
+.firework-particle:nth-child(3) { --dx: -20px; --dy: 20px; }
+.firework-particle:nth-child(4) { --dx: 20px; --dy: 20px; }
+.firework-particle:nth-child(5) { --dx: 0px; --dy: -25px; }
+.firework-particle:nth-child(6) { --dx: 0px; --dy: 25px; }
+.firework-particle:nth-child(7) { --dx: -25px; --dy: 0px; }
+.firework-particle:nth-child(8) { --dx: 25px; --dy: 0px; }
+/* Adicione mais se quiser mais direções específicas, ou deixe o JS variar mais */
+/* O JS já está aplicando uma dispersão aleatória, essas são apenas para um efeito base */
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #B0E0E6; /* Um azul ciano clarinho e vibrante para o rodapé */
+    color: #483D8B; /* Azul ardósia escuro vibrante */
+    font-size: 0.9em;
+    border-top: 1px solid #87CEEB; /* Azul celeste claro vibrante */
+}
+
+/* 📱 Ajustes para telas pequenas */
+@media (max-width: 768px) {
+  body {
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  .grid-container {
+    gap: 3px;
+    margin: 10px auto;
+  }
+
+  .cell {
+    width: 28px;   /* reduz tamanho das células */
+    height: 28px;
+    font-size: 1em;
+    border-radius: 5px;
+  }
+
+  #listaPalavras li {
+    font-size: 0.9em;
+    padding: 4px 8px;
+  }
+
+  #listaPalavras li img {
+    width: 40px;   /* imagens menores */
+    height: 40px;
+  }
+
+  #parabensMensagem {
+    font-size: 2em; /* mensagem menor para caber bem */
+    padding: 20px;
+  }
+}
