@@ -53,7 +53,17 @@ h1 {
   text-align: center;
 }
 
-/* ... e o restante do seu CSS (para .cell, .grid-container, etc.) */
+#instructions {
+    text-align: center;   /* centraliza o texto das instruções */
+    margin: 0 auto;       /* garante que fique centralizado */
+    max-width: 800px;     /* opcional: limita largura para não ficar muito espalhado */
+}
+
+#game-area-container {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente o grid */
+    margin-top: 20px;
+}
 
 /* Estilos existentes para as células e o grid */
 div > label {
@@ -70,11 +80,26 @@ div > label {
     cursor: pointer;
 }
 
+div label[for="nivel"],
+div select#nivel {
+  font-size: 1.2em;
+}
+
+/* Centraliza o container que envolve label + select */
+div:has(#nivel) {
+  display: flex;
+  justify-content: center;  /* centraliza horizontalmente */
+  align-items: center;      /* alinha verticalmente */
+  gap: 10px;                /* espaço entre label e select */
+  margin: 15px 0;
+}
+
 .grid-container {
     display: inline-grid;
     gap: 5px; /* Aumentando um pouco o espaço entre as células */
     border-spacing: 0;
     margin: 20px auto; /* Centralizando o grid */
+    justify-content: center;
 }
 
 .cell {
@@ -142,8 +167,8 @@ div > label {
 }
 
 #listaPalavras li img {
-    width: 50px; /* Tamanho da imagem */
-    height: 50px;
+    width: 90px; /* Tamanho da imagem */
+    height: 90px;
     margin-right: 10px; /* Espaço entre a imagem e o texto */
 }
 
@@ -270,4 +295,6 @@ footer {
   div > label[for="nivel"] {
     display: none; /* esconde apenas o texto "Nível:" */
   }
+
+
 }

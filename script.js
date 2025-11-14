@@ -1,4 +1,4 @@
-const words = ["CARTOON", "COOKING", "DOCUMENTARY", "MOVIES", "MUSIC", "REALITY", "SITCOM", "SOAP-OPERA", "SPORTS", "NEWS", "WHEATHER"];
+const words = ["CARTOON", "COOKING", "DOCUMENTARY", "MOVIES", "MUSIC", "REALITY", "SITCOM", "SOAP-OPERA", "SPORTS", "NEWS", "WEATHER"];
 let palavrasNivel = [];
 let grid = [];
 let palavrasEncontradas = [];
@@ -15,17 +15,17 @@ let celebrationAudio;
 
 // Mapeamento de palavras para caminhos de imagem
 const wordImages = {
-  "CARTOON": "images/CARTOON.PNG",
-  "COOKING-SHOW": "images/COOKING-SHOW.PNG",
-  "DOCUMENTARY": "images/DOCUMENTARY.jpg",
-  "MOVIES": "images/MOVIES.PNG",
-  "MUSIC": "images/MUSIC.PNG",
-  "REALITY": "images/REALITY.PNG",
-  "SITCOM": "images/SITCOM.jpg",
-  "SOAP-OPERA": "images/SOAP-OPERA.PNG",
-  "SPORTS": "images/SPORTS.PNG",
-  "NEWS": "images/NEWS.jpg",
-  "WHEATHER": "images/WHEATHER.PNG"
+  "CARTOON": "images/CARTOON.JPEG",
+  "COOKING": "images/COOKING.JPEG",
+  "DOCUMENTARY": "images/DOCUMENTARY.JPEG",
+  "MOVIES": "images/MOVIES.JPEG",
+  "MUSIC": "images/MUSIC.JPEG",
+  "REALITY": "images/REALITY.JPEG",
+  "SITCOM": "images/SITCOM.JPEG",
+  "SOAP-OPERA": "images/SOAP-OPERA.JPEG",
+  "SPORTS": "images/SPORTS.JPEG",
+  "NEWS": "images/NEWS.JPEG",
+  "WEATHER": "images/WEATHER.JPEG"
 };
 
 // Cores para as partículas dos fogos de artifício
