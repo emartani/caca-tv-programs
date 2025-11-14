@@ -1,4 +1,4 @@
-const words = ["AIR", "FLOWER", "FLOWERPOT", "HOLE", "LEAF", "PETALS", "RAIN", "ROOT", "SEEDS", "SOIL", "STEM", "SUN", "WATERING-POT", "WATER"];
+const words = ["CARTOON", "COOKING", "DOCUMENTARY", "MOVIES", "MUSIC", "REALITY", "SITCOM", "SOAP-OPERA", "SPORTS", "NEWS", "WHEATHER"];
 let palavrasNivel = [];
 let grid = [];
 let palavrasEncontradas = [];
@@ -15,20 +15,17 @@ let celebrationAudio;
 
 // Mapeamento de palavras para caminhos de imagem
 const wordImages = {
-  "AIR": "images/AIR.PNG",
-  "FLOWER": "images/FLOWER.PNG",
-  "FLOWERPOT": "images/FLOWERPOT.jpg",
-  "HOLE": "images/HOLE.PNG",
-  "LEAF": "images/LEAF.PNG",
-  "PETALS": "images/PETALS.PNG",
-  "RAIN": "images/RAIN.jpg",
-  "ROOT": "images/ROOT.PNG",
-  "SEEDS": "images/SEEDS.PNG",
-  "SOIL": "images/SOIL.jpg",
-  "WATERING-POT": "images/WATERING-POT.jpg",
-  "STEM": "images/STEM.PNG",
-  "SUN": "images/SUN.JPG",
-  "WATER": "images/WATER.jpg"
+  "CARTOON": "images/CARTOON.PNG",
+  "COOKING-SHOW": "images/COOKING-SHOW.PNG",
+  "DOCUMENTARY": "images/DOCUMENTARY.jpg",
+  "MOVIES": "images/MOVIES.PNG",
+  "MUSIC": "images/MUSIC.PNG",
+  "REALITY": "images/REALITY.PNG",
+  "SITCOM": "images/SITCOM.jpg",
+  "SOAP-OPERA": "images/SOAP-OPERA.PNG",
+  "SPORTS": "images/SPORTS.PNG",
+  "NEWS": "images/NEWS.jpg",
+  "WHEATHER": "images/WHEATHER.PNG"
 };
 
 // Cores para as partículas dos fogos de artifício
