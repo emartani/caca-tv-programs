@@ -233,13 +233,20 @@ footer {
   }
 
   .grid-container {
-    gap: 3px;
-    margin: 10px auto;
+    display: grid;              /* mantém grid */
+    margin: 0 auto;             /* centraliza horizontalmente */
+    justify-content: center;    /* garante alinhamento central */
+  }
+
+  #cacaPalavrasContainer {
+    display: flex;
+    justify-content: center;    /* centraliza o grid dentro do container */
+    align-items: center;        /* opcional: centraliza verticalmente */
   }
 
   .cell {
-    width: 20px;   /* reduz tamanho das células */
-    height: 20px;
+    width: 25px;   /* reduz tamanho das células */
+    height: 25px;
     font-size: 1em;
     border-radius: 5px;
   }
