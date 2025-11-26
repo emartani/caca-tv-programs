@@ -17,7 +17,6 @@ let celebrationAudio;
 const wordImages = {
   "CARTOON": "images/CARTOON.JPEG",
   "COOKING": "images/COOKING.JPEG",
-  "DOCUMENTARY": "images/DOCUMENTARY.JPEG",
   "MOVIES": "images/MOVIES.JPEG",
   "MUSIC": "images/MUSIC.JPEG",
   "REALITY": "images/REALITY.JPEG",
