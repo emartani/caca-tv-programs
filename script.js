@@ -1,4 +1,4 @@
-const words = ["CARTOON", "COOKING", "DOCUMENTARY", "MOVIES", "MUSIC", "REALITY", "SITCOM", "SOAP-OPERA", "SPORTS", "NEWS", "WEATHER"];
+const words = ["CARTOON", "COOKING", "MOVIES", "MUSIC", "REALITY", "SITCOM", "SOAP-OPERA", "SPORTS", "NEWS", "WEATHER"];
 let palavrasNivel = [];
 let grid = [];
 let palavrasEncontradas = [];
